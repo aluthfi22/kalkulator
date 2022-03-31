@@ -1,0 +1,127 @@
+body {
+  --primary-color: #1788d3;
+  --sec-color: #ccd1dd;
+  --other-color: #3fa2f3;
+  --input-color: white;
+  --sec-input-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  background: var(--primary-color);
+}
+
+.calculator {
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  max-height: 650px;
+  min-height: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--primary-color);
+  overflow: hidden;
+  color: var(--input-color);
+}
+
+.result-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.result-input {
+  text-align: right;
+  background-color: #dadada;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  color: var(--input-color);
+  height: 100px;
+  box-sizing: border-box;
+  padding: 25px 30px;
+}
+
+.result-input-kecil {
+  height: 20px;
+  font-size: 20px;
+  color: var(--sec-input-color);
+}
+
+.result-input-besar {
+  height: 30px;
+  font-size: 40px;
+}
+
+.body-calculator {
+  height: 400px;
+  background: var(--sec-color);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.item-calculator-container {
+  width: 70%;
+  margin: auto;
+}
+
+.delete-result-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.number-calculator-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 23%;
+  min-width: 50px;
+  height: 50px;
+  background: var(--other-color);
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.operator-item {
+  font-size: 32px;
+}
+
+.item:hover {
+  opacity: 0.3;
+}
+
+.delete-result-container > .item,
+.item-red-1 {
+  color: #26d7b8;
+}
+
+.item-red {
+  color: #26d7b8;
+}
+
+.item-red-2 {
+  color: #26d7b8;
+}
